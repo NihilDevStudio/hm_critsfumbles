@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/hackmaster_background"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+             	<ScrollView
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:fillViewport="true"
+	  
+	  >
+	  
+	<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+     <ImageView
+        android:id="@+id/logo"
+        android:layout_width="290dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Logo"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/hackmaster_logo" />
+     
+	<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical">
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginBottom="15dp"
+         android:orientation="horizontal" >
+
+     <TextView
+         android:id="@+id/crtittext"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Critical Hit!!!!"
+         android:textColor="#555555" 
+         android:textStyle="bold"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+     <TextView
+         android:id="@+id/crtittext2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text=" (Step 1)"
+         android:textColor="#555555" 
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+     </LinearLayout>
+
+     
+     
+     <TextView
+         android:id="@+id/Diff_txt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#555555" 
+         android:text="Wound Severity (Difference between attack and defense + damage roll):"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <EditText
+         android:id="@+id/diff"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="15dp"
+         android:ems="5"
+         android:inputType="number" >
+
+         </EditText>
+         
+   <TextView
+         android:id="@+id/atk_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#555555" 
+         android:text="Attacker Size:"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <Spinner
+       android:id="@+id/atk"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="15dp"
+       android:layout_marginRight="15dp"
+       android:entries="@array/sizes" />
+
+   <TextView
+         android:id="@+id/def_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#555555" 
+         android:text="Deffender Size:"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <Spinner
+       android:id="@+id/def"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="15dp"
+       android:layout_marginRight="15dp"
+       android:entries="@array/sizes" />
+   
+      <TextView
+         android:id="@+id/dam_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#555555" 
+         android:text="Damage Type:"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <Spinner
+       android:id="@+id/dam"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="15dp"
+       android:layout_marginRight="15dp"
+       android:entries="@array/crits" />
+     
+     <Button
+         android:id="@+id/next"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         style="@style/btnStyleShakespeare"
+         android:text="Next" />
+</LinearLayout>
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/hackmaster_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+        	<ScrollView
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:fillViewport="true"
+	  
+	  >
+    
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_gravity="center_vertical"
+         android:orientation="vertical"
+         android:scrollbars="vertical" >
+
+     <ImageView
+         android:id="@+id/logo"
+         android:layout_width="290dp"
+         android:layout_height="181dp"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="-25dp"
+         android:contentDescription="Logo"
+         android:src="@drawable/hackmaster_logo" />
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical|right"
+             android:layout_marginBottom="10dp"
+             android:gravity="center"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:text="Welcome to HackMaster Critical Hits and Fumbles.\n Choose your option!"
+             android:textColor="#555555"
+             android:textSize="16sp" />
+
+         <Button
+             android:id="@+id/crit"
+             style="@style/btnStyleShakespeare"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:text="Critical Hit"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/fumble"
+             style="@style/btnStyleOrange"
+             android:layout_width="110dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="20dp"
+             android:text="Fumble"
+             android:layout_marginBottom="20dp"
+             android:textSize="18sp" />
+         
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical|right"
+             android:layout_marginBottom="20dp"
+             android:gravity="center"
+             android:text="NihilDev Logo"
+             android:textColor="#555555"
+             android:textSize="18sp" />
+
+     </LinearLayout>
+</ScrollView>
+</LinearLayout>

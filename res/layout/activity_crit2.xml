@@ -1,0 +1,104 @@
+
+
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hackmaster_background"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_bottom_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    
+    	<ScrollView
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:fillViewport="true"
+	  
+	  >
+	  	<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+    	    
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="290dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Logo"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/hackmaster_logo" />
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginBottom="15dp"
+         android:orientation="horizontal" >
+	     <TextView
+	         android:id="@+id/crtittext"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="Critical Hit!!!!"
+	         android:textColor="#555555" 
+	         android:textStyle="bold"
+	         android:textAppearance="?android:attr/textAppearanceLarge" />
+	     
+	     <TextView
+	         android:id="@+id/crtittext2"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text=" (Step 2)"
+	         android:textColor="#555555" 
+	         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	</LinearLayout>
+         
+    <TextView
+         android:id="@+id/d1000_txt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#555555"
+         android:text="D1000:"
+         android:layout_marginLeft="25dp"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <EditText
+         android:id="@+id/d1000"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:ems="5"
+         android:inputType="number"
+         android:layout_marginLeft="25dp"
+          >
+
+     </EditText>
+     
+     <Button
+         android:id="@+id/roll"
+         style="@style/btnStyleArsenic"
+         android:layout_width="128dp"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="45dp"
+         android:text="Autoroll" />
+     
+     <Button
+         android:id="@+id/crit"
+         style="@style/btnStyleShakespeare"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginBottom="15dp"
+         android:layout_marginTop="25dp"
+         android:text="Let&apos;s crit!" />
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
