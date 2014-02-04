@@ -13,10 +13,10 @@
     android:paddingTop="@dimen/activity_vertical_margin" >
     
     	<ScrollView
-	  android:layout_width="wrap_content"
-	  android:layout_height="wrap_content"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent"
 	  android:fillViewport="true"
-	  
+	  android:layout_gravity="center"
 	  >
 	  	<LinearLayout
     android:layout_width="match_parent"
@@ -63,8 +63,9 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:textColor="#555555"
-         android:text="D1000:"
+         android:text="Roll a D1000:"
          android:layout_marginLeft="25dp"
+ 
          android:textAppearance="?android:attr/textAppearanceMedium" />
 
      <EditText

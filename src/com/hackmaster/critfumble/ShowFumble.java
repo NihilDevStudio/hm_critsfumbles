@@ -26,7 +26,8 @@ public class ShowFumble  extends Activity   implements OnClickListener{
 		
 		Bundle extras = getIntent().getExtras();
 		int d1000i = extras.getInt("Number");
-		
+		int value_rolled = d1000i;
+		if(d1000i>1100) d1000i = 1099;
 		SQLiteDatabase db = mApplication.usdbh.getWritableDatabase();
 		Cursor c = null;
 		String text = "";
@@ -44,7 +45,7 @@ public class ShowFumble  extends Activity   implements OnClickListener{
 		 
 		 if(d1000i>200){
 			 TextView tv_Number = (TextView)findViewById(R.id.fumble_num);
-			 tv_Number.setText(""+d1000i); 
+			 tv_Number.setText(""+value_rolled); 
 			 if(d1000i%2!=0){
 				 TextView tv_Additional = (TextView)findViewById(R.id.additional_effect);
 				 tv_Additional.setText("Your enemy gets a free immediate attack.\n\n Plus:");
