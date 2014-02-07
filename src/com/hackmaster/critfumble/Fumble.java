@@ -21,6 +21,7 @@ public class Fumble extends Activity  implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_fumble);
+		getActionBar().hide();
 		
 		Button roll = (Button)findViewById(R.id.roll);
 		roll.setOnClickListener(this);

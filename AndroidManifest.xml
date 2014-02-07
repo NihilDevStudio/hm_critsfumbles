@@ -5,8 +5,8 @@
     android:versionName="1.2" >
 
     <uses-sdk
-        android:minSdkVersion="19"
-        android:targetSdkVersion="19" />
+        android:minSdkVersion="12"
+        android:targetSdkVersion="14" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application
@@ -17,6 +17,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.hackmaster.critfumble.MainActivity"
+            android:screenOrientation="portrait"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,11 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="Fumble" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name="ShowFumble"></activity>
-        <activity android:name="Crit" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name="Crit2" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name="ShowCrit"></activity>
+        <activity android:name="Fumble" android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light" android:screenOrientation="portrait"></activity>
+        <activity android:name="ShowFumble" android:screenOrientation="portrait"></activity>
+        <activity android:name="Crit" android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light" android:screenOrientation="portrait"></activity>
+        <activity android:name="Crit2" android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light" android:screenOrientation="portrait"></activity>
+        <activity android:name="ShowCrit" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

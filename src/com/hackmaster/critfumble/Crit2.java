@@ -28,6 +28,7 @@ public class Crit2 extends Activity  implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_crit2);
 		setTheme(R.style.AppBaseTheme);
+		getActionBar().hide();
 		
 		Button roll = (Button)findViewById(R.id.roll);
 		roll.setOnClickListener(this);

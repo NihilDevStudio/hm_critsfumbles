@@ -23,6 +23,7 @@ public class Crit extends Activity  implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_crit);
+		getActionBar().hide();
 		
 		Button next = (Button)findViewById(R.id.next);
 		next.setOnClickListener(this);
