@@ -1,6 +1,7 @@
-package com.hackmaster.critfumble;
+package com.nihildev.critfumble;
 
 import com.flurry.android.FlurryAgent;
+
 
 import android.app.Activity;
 import android.content.Intent;

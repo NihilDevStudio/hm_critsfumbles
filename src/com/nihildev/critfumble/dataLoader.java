@@ -1,4 +1,4 @@
-package com.hackmaster.critfumble;
+package com.nihildev.critfumble;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
